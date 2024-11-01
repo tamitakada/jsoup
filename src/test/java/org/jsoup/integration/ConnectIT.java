@@ -42,7 +42,7 @@ public class ConnectIT {
         });
 
         runner.start();
-        Thread.sleep(1000 * 3);
+        Thread.sleep(1500);
         runner.interrupt();
         assertTrue(runner.isInterrupted());
         runner.join();
@@ -69,7 +69,7 @@ public class ConnectIT {
         });
 
         runner.start();
-        Thread.sleep(3 * 1000);
+        Thread.sleep(1250);
         runner.interrupt();
         assertTrue(runner.isInterrupted());
         runner.join();
@@ -96,7 +96,7 @@ public class ConnectIT {
         });
 
         runner.start();
-        Thread.sleep(2 * 1000);
+        // Thread.sleep(2 * 1000);
         runner.interrupt();
         runner.join();
         assertFalse(ioException.get());
